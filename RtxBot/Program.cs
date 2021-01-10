@@ -14,6 +14,7 @@ namespace RtxBot
     class Program
     {
         const string PBAccessToken = "<YourPushBulletAccessTokenHere>";
+        const string PBDeviceId = "<YourDeviceIdHere>";
 
         enum State
         {
@@ -112,7 +113,7 @@ namespace RtxBot
                 public string Type => "link";
 
                 [JsonProperty("device_iden")]
-                public string DeviceId => "ujx7FvHZyoKsjAsoeMFET6";
+                public string DeviceId => PBDeviceId;
 
                 public Push(string uri)
                 {
